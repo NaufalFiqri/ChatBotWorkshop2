@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Message> messages;
     private RecyclerView recyclerView;
     private recyclerAdapter adapter;
-    private ImageButton sendButton;
     private EditText msgInput;
     private getRequest request;
 
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new recyclerAdapter(messages);
         recyclerView.setAdapter(adapter);
 
-        sendButton = (ImageButton) findViewById(R.id.msgButton);
+        ImageButton sendButton = (ImageButton) findViewById(R.id.msgButton);
         msgInput = (EditText) findViewById(R.id.msgInput);
 
         sendButton.setOnClickListener(new View.OnClickListener() {
@@ -78,10 +77,7 @@ public class MainActivity extends AppCompatActivity {
         ConnectivityManager cm = (ConnectivityManager) context
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
-        if (netInfo != null && netInfo.isConnectedOrConnecting()) {
-            return true;
-        }
-        return false;
+        return netInfo != null && netInfo.isConnectedOrConnecting();
     }
 
 
