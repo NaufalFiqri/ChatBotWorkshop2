@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String message = msgInput.getText().toString();
-                if(message.length() != 0){
+                if (message.length() != 0) {
                     messages.add(new Message(true, message));
                     int newPosition = messages.size() - 1;
                     adapter.notifyItemInserted(newPosition);
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        if (isNetwork(getApplicationContext())){
+        if (isNetwork(getApplicationContext())) {
 
             Toast.makeText(getApplicationContext(), "Internet Connected", Toast.LENGTH_SHORT).show();
 
@@ -85,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     private void getReply(String message) {
         request.getResponse(message, new getRequest.VolleyResponseListener() {
             @Override
@@ -103,4 +102,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+}
 
