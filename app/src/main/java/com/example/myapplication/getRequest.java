@@ -15,9 +15,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class getRequest {
-    private RequestQueue queue;
-    private String APIkey = "kDd8Roj1a0ZSYmrS";
-    private String brainID = "171328";
+    private final RequestQueue queue;
     private String reply;
     private char[] illegalChars = {'#', '<', '>', '$', '+', '%', '!', '`', '&',
             '*', '\'', '\"', '|', '{', '}', '/', '\\', ':', '@'};
@@ -43,7 +41,7 @@ public class getRequest {
 
     public void getResponse(String message, final VolleyResponseListener volleyResponseListener){
         message = formatMessage(message);
-        String url = "http://api.brainshop.ai/get?bid=" + brainID+ "&key=" + APIkey + "&uid=1&msg=" + message;
+        String url = "http://api.brainshop.ai/get?bid=171328&key=kDd8Roj1a0ZSYmrS&uid=[uid]&msg=" + message;
         Log.d("URL", url);
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>(){
