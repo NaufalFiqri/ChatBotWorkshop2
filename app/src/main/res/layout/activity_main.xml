@@ -28,6 +28,7 @@
             android:padding="10dp"
             android:layout_weight="1"
             android:maxLines="2"
+            android:hint="message"
             android:inputType="text"
             android:textSize="14sp"
             android:background="@drawable/rounded_corner"/>
