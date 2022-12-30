@@ -41,7 +41,7 @@ public class getRequest {
 
     public void getResponse(String message, final VolleyResponseListener volleyResponseListener){
         message = formatMessage(message);
-        String url = "http://api.brainshop.ai/get?bid=171328&key=kDd8Roj1a0ZSYmrS&uid=[uid]&msg=" + message;
+        String url = "http://api.brainshop.ai/get?bid=171328&key=kDd8Roj1a0ZSYmrS&uid=uid&msg=" + message;
         Log.d("URL", url);
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>(){
