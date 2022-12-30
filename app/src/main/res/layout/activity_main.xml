@@ -31,13 +31,13 @@
             android:hint="@string/message"
             android:inputType="text"
             android:textSize="14sp"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/rounded_corner"/>
 
         <ImageButton
             android:id="@+id/msgButton"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:background="@drawable/circular_button"
             android:src="@drawable/outline_send_white_24dp"
             android:padding="5dp"
