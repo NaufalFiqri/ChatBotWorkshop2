@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import static com.example.myapplication.R.id.recyclerView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;

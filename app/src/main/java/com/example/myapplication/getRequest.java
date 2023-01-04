@@ -15,8 +15,8 @@ import org.json.JSONObject;
 
 public class getRequest {
     private final RequestQueue queue;
-    private String APIkey = "kDd8Roj1a0ZSYmrS";
-    private String brainID = "171328";
+    private String APIkey = "N3loBahaFXvj9Ha5";
+    private String brainID = "171530";
     private String reply;
     private char[] illegalChars = {'#', '<', '>', '$', '+', '%', '!', '`', '&',
             '*', '\'', '\"', '|', '{', '}', '/', '\\', ':', '@'};
